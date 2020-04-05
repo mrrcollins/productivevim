@@ -2,6 +2,8 @@
 
 Here is a set up for using Vim for writing and for tracking tasks. It can work as is or be used to help you set up your own Vim setup.
 
+I can't take credit for any of these great plugins.
+
 ## Plugins used
 
 * [tpope/vim\-pathogen: pathogen\.vim: manage your runtimepath](https://github.com/tpope/vim-pathogen)
@@ -14,15 +16,19 @@ Here is a set up for using Vim for writing and for tracking tasks. It can work a
 
 This set up is designed to be used with a brand new set up. Switch to your home directory (~/) and execute:
 
+    cd ~/
     git clone --recurse-submodules https://github.com/mrrcollins/productivevim.git
 
 And then link to the vimrc file:
 
+    cd ~/
     ln -s .vim/vimrc .vimrc
 
 # Usage
 
 When writing, .markdown and .md files will automatically put Vim into a word processing mode. Control-g toggles Goyo, which will put Vim into a distraction free environment.
+
+If you want to journal, `xdate` will expand to the date and time, while `xtime` will expand to the current time. You can adjust the format in the `vimrc` file.
 
 For tasks, the [Taskpaper plugin](https://github.com/cweagans/vim-taskpaper) is active on files that end in .taskpaper. 
 
