@@ -4,6 +4,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Configuration
+setlocal tabstop=4
+
 " vim-markdown settings
 let g:vim_markdown_folding_disabled = 1
 set conceallevel=2
@@ -44,8 +47,6 @@ function! WordProcessorMode()
     setlocal shiftwidth=4
     map j gj
     map k gk
-    setlocal spell spelllang=en_us
-    set thesaurus+=~/.vim/thesaurus/mthesaur.txt
     set complete+=s
     setlocal nonumber
     hi FoldColumn ctermbg=Black ctermfg=Black

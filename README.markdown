@@ -8,6 +8,7 @@ Here is a set up for using Vim for writing and for tracking tasks. It can work a
 * [plasticboy/vim\-markdown: Markdown Vim Mode](https://github.com/plasticboy/vim-markdown)
 * [junegunn/goyo\.vim: Distraction\-free writing in Vim](https://github.com/junegunn/goyo.vim)
 * [reedes/vim\-pencil: Rethinking Vim as a tool for writing](https://github.com/reedes/vim-pencil)
+* [cweagans/vim\-taskpaper: Comprehensive taskpaper support for Vim](https://github.com/cweagans/vim-taskpaper)
 
 # Getting started
 
@@ -19,6 +20,15 @@ And then link to the vimrc file:
 
     ln -s .vim/vimrc .vimrc
 
+# Usage
+
+When writing, .markdown and .md files will automatically put Vim into a word processing mode. Control-g toggles Goyo, which will put Vim into a distraction free environment.
+
+For tasks, the [Taskpaper plugin](https://github.com/cweagans/vim-taskpaper) is active on files that end in .taskpaper. 
+
 # Updating
 
-Run `git submodule update --remote` in .vim
+    cd ~/.vim
+    git pull
+    git submodule update --remote
+
