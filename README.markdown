@@ -14,15 +14,13 @@ I can't take credit for any of these great plugins.
 
 # Getting started
 
-This set up is designed to be used with a brand new set up. Switch to your home directory (~/) and execute:
+This set up is designed to be used with a brand new set up. Git clone the repo with submodules in to `~/.vim`
 
-    cd ~/
-    git clone --recurse-submodules https://github.com/mrrcollins/productivevim.git
+    git clone --recurse-submodules https://github.com/mrrcollins/productivevim.git ~/.vim
 
 And then link to the vimrc file:
 
-    cd ~/
-    ln -s .vim/vimrc .vimrc
+    ln -s ~/.vim/vimrc ~/.vimrc
 
 # Usage
 
